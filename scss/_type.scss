@@ -1,0 +1,136 @@
+//HEADER SIZES
+h1,
+h2,
+h3,
+h4 {
+    font-family: $font-family-headings;
+    line-height: 1.1;
+    font-weight: normal;
+    margin: $base-line-height/2 0;
+}
+
+h1 {
+    transition: font-size 0.5s ease;
+    font-size: 3rem;
+    //768px 
+    @media (min-width: 768px) {
+        font-size: 3.75rem;
+    }
+}
+
+h2 {
+    font-size: 2.25rem;
+}
+
+h3 {
+    font-size: 1.875rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+//DYNAMIC HEADINGS
+.h3-to-h4 {
+    font-size: 1.5rem;
+    @media (min-width: 480px) {
+        font-size: 1.875rem;
+    }
+}
+
+//TEXT MARGINS
+p {
+    margin-bottom: $main-margin;
+    margin-top: 0;
+}
+
+.headline-margin {
+    margin: $main-margin ($main-margin * 2);
+    h1 {
+        span {
+            transition: color 1s ease-in-out;
+        }
+    }
+}
+
+.section-heading {
+    font-size: 1.875rem;
+    margin-bottom: $base-line-height*2;
+    @media (min-width: 768px) {
+        font-size: 2.25rem;
+        margin-bottom: $base-line-height*2;
+    }
+}
+
+//LEAD / BODY TEXT
+//open sans light 18px mobile / 24px desktop
+.lead {
+    font: 1.125rem/2 $font-family-sans-serif;
+    line-height: 2rem;
+    font-weight: 300;
+    @media (min-width: 768px) {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+//18px desktop 16px mobile
+.lg-body-text {
+    font-size: 1rem;
+    @media (min-width: 480px) {
+        font-size: 1.125rem;
+        line-height: 2rem;
+    }
+}
+
+//18 px across
+.lg-body-text-static {
+    font-size: 1.125rem;
+    line-height: 2rem;
+}
+
+//TEXT-ALIGN
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center-sm {
+    text-align: center;
+    @media (min-width: 768px) {    
+         text-align: left;
+    }
+}
+
+//TEXT COLORS
+.white-text {
+    color: white;
+}
+
+.red-text {
+    color: $red;
+}
+
+.green-text {
+    color: $green;
+}
+
+.black-text {
+    color: $gray-dark;
+}
+
+.transparent-text {
+    color: $transparent
+}
+
+//Alla länkar
+a {
+    text-decoration: none;
+}

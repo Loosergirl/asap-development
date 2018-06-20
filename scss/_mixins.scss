@@ -1,0 +1,26 @@
+//Mixins
+@mixin flex-center($align:center, $justify:center, $direction:row) {
+    display: flex;
+    align-content: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+}
+
+@mixin tab-focus() {
+    // WebKit-specific. Other browsers will keep their default outline style.
+    // (Initially tried to also force default via `outline: initial`,
+    // but that seems to erroneously remove the outline in Firefox altogether.)
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+
+@mixin header-img {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    @include flex-center(center, flex-end, column);
+}

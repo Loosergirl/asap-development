@@ -1,0 +1,44 @@
+//bg-colors for boxes
+.bg-transparent {
+    background-color: transparent;    
+}
+.bg-green {
+    background-color: $green;
+    color: $white;
+}
+
+.bg-white {
+    background-color: $white;
+}
+
+.bg-blue {
+    background-color: $blue;
+    color: $white;
+}
+
+.bg-red {
+    background-color: $red;
+    color: $white;
+}
+
+.bg-gray-dark {
+    background-color: $gray-dark;
+    color: $white;
+}
+
+.bg-smoke {
+    background-color: $smoke;
+}
+
+.bg-orange {
+    background-color: $orange;
+}
+
+.bg-yellow {
+    background-color: $yellow;
+}
+
+.bg-lexcorp {
+    color: $white;
+    background-image: linear-gradient( 90deg, rgb(41, 37, 36) 0%, rgb(52, 47, 44) 20%, rgb(61, 58, 55) 45%, rgb(64, 63, 61) 70%, rgb(63, 68, 72) 100%);
+}

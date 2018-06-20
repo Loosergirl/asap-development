@@ -1,0 +1,31 @@
+section.om-oss {
+	.section-heading {
+		color: $green;
+	}
+}
+
+// boxar på förstasidan
+.marketing-list{
+		margin-bottom: 2.25rem;
+		.marketing-item {
+			text-align: center;
+			font-size: 1.125rem;
+			.marketing-heading {
+				color: $red;
+			}
+			&.bg-green {
+				.marketing-heading {
+					color: $white;
+				}			
+			}
+		}
+}
+
+.marketing-image {
+	padding: 2rem 0;
+	text-align: center;
+	.svg-icon {
+		height: 120px;
+		width: auto;
+	}
+}

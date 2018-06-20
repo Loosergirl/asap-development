@@ -1,0 +1,65 @@
+//Footer
+footer {
+    position: relative;
+    color: white;
+    background-color: $blue;
+    padding: $main-padding*2 0;
+    a {
+        color: #fff;
+        &:hover {
+            color: lighten($blue, 40%);
+        }
+    }
+    a[href^=tel] {
+        @media (min-width: 768px) {
+            color: #ababab;
+        }
+    }
+}
+footer .container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer h4 {
+    font-weight: 300;
+    margin-top: $main-margin;
+}
+address {
+    font-style: normal;
+    color: #ababab;
+    margin-bottom: $main-margin*2;
+    line-height: 2rem;
+}
+.ul-social {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2.5rem;
+    @media (min-width: 768px) {
+        margin-bottom: 0;       
+    }
+}
+.ul-social li {
+    display: inline;
+    margin: 0 5px $main-margin 0;
+}
+.ul-social li a {
+    text-decoration: none;
+    color: white;
+}
+.ul-social li a:hover {
+    color: lighten($blue, 40%);
+}
+
+.btn-to-top {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    margin-left: -1.25rem;
+    @media (min-width: 768px) {
+        bottom: 1.5rem;
+        right: 1rem;
+        left: auto;
+        margin-left: 0;
+    }
+}

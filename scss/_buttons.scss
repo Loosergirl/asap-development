@@ -1,0 +1,137 @@
+//Buttons
+.btn {
+    display: block;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    text-transform: uppercase;
+    border: $btn-border-width white solid;
+    border-bottom: $btn-border-bottom-width white solid;
+    border-radius: $border-radius-base;
+    margin-bottom: 0; // For input.btn
+    padding: 0.7rem $main-padding;
+    background-color: transparent;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214 
+    width: 18rem;
+    &:focus {
+        @include tab-focus;
+        outline: 0;
+    }
+    &:active {
+        outline: 0;
+        background-image: none;
+        box-shadow: none;
+    }
+    transition: all 0.35s ease;
+}
+
+.btn-sm {
+    width: auto;
+    font-size: 1rem;
+    display: inline-block;
+}
+
+.btn-submit {
+    color: $red;
+    background-color: white;
+    border-radius: $border-radius-base;
+    border-color: $red;
+    border-bottom-color: $red;
+    width: 100%;
+    &:focus,
+    &:hover {
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
+    }
+    &:active {
+        color: white;
+        background-color: $red;
+        border-bottom-color: darken($red, 15%);
+    }
+}
+
+.btn-to-top {
+    background-color: darken($blue, 5%);
+    border-width: 1px;
+    border-color: lighten($blue, 10%);
+    border-radius: $border-radius-base;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    color: white;
+    width: 2.5rem;
+}
+
+.btn-to-top:hover {
+    background-color: darken($blue, 10%);
+    border-color: lighten($blue, 10%);
+    color: lighten($blue, 50%);
+}
+
+.btn-to-top i {
+    line-height: 2rem;
+}
+
+.btn-green {
+    color: $green;
+    border-color: $green;
+    &:focus,
+    &:hover {
+        color: white;
+        background-color: $green;
+        border-bottom-color: darken($green, 15%);
+    }
+    &:active {
+        color: white;
+        background-color: $green;
+        border-bottom-color: darken($green, 15%);
+    }
+}
+
+.btn-blue {
+    color: $blue;
+    border-color: $blue;
+    &:focus,
+    &:hover {
+        color: white;
+        background-color: $blue;
+        border-bottom-color: darken($blue, 15%);
+    }
+    &:active {
+        color: white;
+        background-color: $blue;
+        border-bottom-color: darken($blue, 15%);
+    }
+}
+
+.btn-blue-fill {
+    border-color: $blue;
+    border-bottom-color: darken($blue, 5%);
+    background-color: $blue;
+    &:hover {
+        background-color: lighten($blue, 5%);
+        border-color: lighten($blue, 5%);
+        border-bottom-color: $blue;
+        color: $white;
+    }
+    &:focus,
+    &.focus {}
+}
+
+.btn-yellow {
+    color: $yellow;
+    border-color: $yellow;
+}
+
+.btn-gray-dark {
+    color: $gray-dark;
+    border-color: $gray-dark;
+}
+
+.btn-red {
+    color: $red;
+    border-color: $red;
+}

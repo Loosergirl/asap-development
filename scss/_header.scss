@@ -1,0 +1,136 @@
+    // header-section
+    header {
+        width: 100%;
+        height: 440px;
+        height: 100vh;
+        transition: all 0.5s ease;
+        @media screen and (min-width: 480px) {
+            height: 730px;
+            height: 80vh;
+        }
+        @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
+            height: 140vh;
+        }
+    }
+    
+    .main-headline-box {
+        width: 100%;
+        height: 50%;
+        @include flex-center(center, flex-end, column);
+        h1 {
+            font-size: 3rem;
+            margin-top: 0;
+            margin-bottom: 0.75rem;
+            @media screen and (min-width: 480px) and (max-width: 667px) and (orientation: landscape) {
+                font-size: 2.75rem;
+            }
+            @media screen and (min-width: 668px) {
+                font-size: 3.75rem;
+            }
+        }
+        @media screen and (min-width: 668px) {
+            height: 100%;
+        }
+    }
+    
+    .header-diagonal-top {
+        display: block;
+        width: 100%;
+        height: 22%;
+    }
+    
+    .header-diagonal-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 28%;
+        margin-top: -1px;
+    }
+    
+    .hem .header-diagonal-bottom p {
+        margin-top: -2rem;
+        @media screen and (min-width: 480px) {
+            margin-top: 0.75rem;
+        }
+    }
+    
+    //blixt-ikon 
+    #large-flash {
+        width: 2.25rem;
+        height: auto;
+        align-self: center;
+        display: none;
+        transition: opacity 1s ease-in-out;
+        //480px
+        @media screen and (min-width: 480px) {
+            display: block;
+        }
+        @media screen and (min-width: 568px) {
+            width: 2.5rem;
+        }
+        @media screen and (min-width: 668px) {
+            width: 3.75rem;
+        }
+    }
+    
+    #small-flash {
+        position: absolute;
+        right: 16px;
+        bottom: 30%;
+        width: 38px;
+        height: auto;
+        transition: all 1s ease-in-out;
+        //480px
+        @media screen and (min-width: 480px) {
+            display: none;
+        }
+    }
+    
+    .flash-before {
+        opacity: 0;
+    }
+    
+    .flash-after {
+        opacity: 1;
+    }
+    
+    // De olika sidornas bakgrundsbilder          
+    #index-bg {
+        background: url("../images/img/header-desktop-hem-3@2x.jpg");
+        background-position: center top;
+        @include header-img;
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+    }
+    
+    #vad-vi-gor-bg {
+        background-image: url("../images/img/header-desktop-vad-vi-gor@2x.jpg");
+        background-position: center bottom 75px;
+        @include header-img;
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+    }
+    
+    #kundcase-bg {
+        background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+        background-position: center center;
+        @include header-img;
+        @media screen and (min-width: 480px) {
+            background-image: url("../images/img/header-desktop-kundcase@2x.jpg");
+        }
+        @media only screen and (min-width: 768px) {
+            background-attachment: fixed;
+        }
+        @media screen and (min-width: 1280px) {
+            background-position: center center;
+        }
+    }
+    
+    #kontakt-bg {
+        @include header-img;
+        background-position: center bottom;
+        background-image: url("../images/img/header-desktop-kontakt@2x.jpg");
+    }

@@ -1,0 +1,79 @@
+.karta {
+    position: relative;
+    height: 0;
+    width: 100%;
+    padding-bottom: 145.625%;    
+    @media (min-width: 768px) {
+         padding-bottom: 30.9375%;    
+    }
+
+}
+
+.karta-inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 100%;
+    //Eftersom det är en rubrik på bilden använder vi media queries i css istället för srcset:
+    
+    @media (min-width: 768px) {
+        background-image: url(../images/img/bg-desktop-konsulter-map@2x.jpg);
+    }
+    @media(min-width: 240px) and (max-width: 767px) {
+        background-image: url(../images/img/bg-mobile-konsulter@2x.jpg);
+    }
+    @media (max-width: 239px) {
+        background-image: url(../images/img/bg-mobile-konsulter@0,5x.jpg);
+    }
+    
+}
+
+.karta .section-heading {
+    color: #fff;
+    position: absolute;
+    top: 2.25rem;
+    left: 0;
+    right: 0;
+}
+
+//Texten efter headern på kontakt-sidan:
+.contact-story-text {
+    margin-bottom: 2.5rem;
+}
+
+#contact-story {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    @media (min-width: 480px) {
+        max-width: 30rem;
+    }
+    @media (min-width: 768px) {
+        margin-left: 10rem;
+        margin-right: 4rem;
+    }
+}
+
+#contact-circle {
+    margin-top: 3rem;
+    margin-bottom: 6.5rem;
+    height: 10.5rem;
+    width: 10.5rem;
+    @media (min-width: 768px) {
+        height: 12rem;
+        width: 12rem;
+    }
+}
+
+#contact-circle-text {
+    margin-top: 2rem;
+}
+
+#contact-story-positioner {
+    display: flex;
+flex-flow: column nowrap;
+@media (min-width: 768px) {
+    flex-flow: row nowrap;
+}
+}

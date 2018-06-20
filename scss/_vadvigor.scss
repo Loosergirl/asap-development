@@ -1,0 +1,128 @@
+section.om-oss {
+    .section-heading {
+        color: $green;
+    }
+}
+
+// boxar på förstasidan
+.marketing-list {
+    margin-bottom: 2.25rem;
+    .marketing-item {
+        text-align: center;
+        .marketing-heading {
+            color: $red;
+        }
+        &.bg-green {
+            .marketing-heading {
+                color: $white;
+            }
+        }
+    }
+}
+
+.marketing-image {
+    padding: 2rem 0;
+    text-align: center;
+    .svg-icon {
+        height: 120px;
+        width: auto;
+    }
+}
+
+#handshake {
+    @include flex-center(center, flex-end, column);
+    background-position: -200px 0px;
+    width: 100%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("../images/img/sektion-darfor-desktop@2x.jpg");
+    @media screen and (min-width: 480px) {
+        background-position: 0 0;
+        position: static;
+    }
+}
+
+.content-diagonal-top {
+    display: block;
+    width: 100%;
+    height: 30%;
+}
+
+.small-diagonal {
+    display: block;
+    width: 100%;
+    height: 50px;
+    polygon {
+        @media screen and (min-width: 768px) {}
+    }
+}
+
+#poly-white {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: block;
+    }
+}
+
+#poly-smoke {
+    display: block;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.content-diagonal-bottom {
+    margin-top: -1px;
+}
+
+#darfor {
+    .section-heading {
+        margin-bottom: 1.5rem;
+    }
+}
+
+#world-green {
+    background: url("../images/img/about-globalt-dsktop-bg@2x.jpg");
+    background-size: cover;
+}
+
+.svg-icon-dyn {
+    height: 72px;
+    width: 100%;
+    @media screen and (min-width: 480px) {
+        height: 120px;
+        align-self: flex-start;
+    }
+}
+
+.about-list {
+    .about-item {
+        min-height: 16rem;
+        &.bg-white {
+            h3 {
+                color: $red;
+            }
+        }
+        .container {
+            @include flex-center();
+        }
+    }
+}
+
+.block {
+    display: block;
+    float: right;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.section-padding-md-special {
+    padding-top: $section-padding-md-top;
+    padding-bottom: 0;
+    @media screen and (min-width: 768px) {
+        padding-bottom: $section-padding-md-bottom;
+    }
+}

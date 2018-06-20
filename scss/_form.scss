@@ -1,0 +1,68 @@
+//Form-section
+.form-section {
+    padding-top: 0;
+    padding-bottom: 0;
+    @media (min-width: 768px) {
+        height: auto;
+        padding-top: $section-padding-md-top;
+        padding-bottom: $section-padding-md-bottom;
+    }
+}
+
+.form-wrapper {
+    padding: $main-padding;
+    @media (min-width: 768px) {
+        padding: 0;
+    }
+}
+
+.form-container {
+    padding-top: $section-padding-md-top;
+    padding-bottom: $section-padding-md-top;
+    padding-left: $gutter-size;
+    padding-right: $gutter-size;
+    @media (min-width: 768px) {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.form-wrapper .section-heading {
+    color: $red;
+    text-align: center;
+}
+
+form {
+    font-weight: normal;
+    text-align: inherit;
+    font-size: 1rem;
+    color: $red;
+}
+
+input,
+textarea {
+    box-sizing: border-box;
+    margin-bottom: $main-margin;
+    padding: 0.7rem 1rem;
+    border: $red 2px solid;
+    width: 100%;
+}
+
+input:focus,
+textarea:focus {
+    outline-color: $red;
+    transition: 0.3s;
+}
+
+textarea {
+    height: $main-margin*8;
+    @media (min-width: 768px) {
+        height: 9.2rem;
+    }
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    font-size: 1rem;
+}

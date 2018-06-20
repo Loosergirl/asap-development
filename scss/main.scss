@@ -1,0 +1,32 @@
+@import 'normalize';
+@import 'fonts';
+@import 'mixins';
+@import 'variables';
+@import 'shapes';
+@import 'images';
+@import 'backgrounds';
+@import 'grid';
+@import 'type';
+@import 'buttons';
+@import 'form';
+@import 'header';
+@import 'top-nav';
+@import 'footer';
+@import 'vadvigor';
+@import 'projekt';
+@import 'contact-medarbetare';
+@import 'contact-misc';
+@import 'media';
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: white;
+    font-size: 1rem;
+    line-height: $base-line-height;
+    font-family: $font-family-sans-serif;
+    font-weight: 300;
+}
